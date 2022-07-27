@@ -1,7 +1,8 @@
 Source: lua-resty-lrucache
 Section: net
 Priority: optional
-Build-Depends: debhelper-compat (= 13), dh-lua
+Build-Depends: debhelper-compat (= 13),
+               dh-lua,
 Maintainer: Jan Mojžíš <jan.mojzis@gmail.com>
 Homepage: https://github.com/openresty/lua-resty-lrucache
 Standards-Version: 4.6.1
@@ -10,8 +11,9 @@ Vcs-Git: https://salsa.debian.org/lua-team/lua-resty-lrucache.git
 Vcs-Browser: https://salsa.debian.org/lua-team/lua-resty-lrucache
 
 Package: lua-resty-lrucache
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Provides: ${lua:Provides}
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Provides: ${lua:Provides},
 XB-Lua-Versions: ${lua:Versions}
 Architecture: all
 Description: LRU cache for the ngx_lua module.
