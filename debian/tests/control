@@ -1,3 +1,0 @@
-Tests: dh-lua-tests
-Restrictions: allow-stderr
-Depends: @, @builddeps@
