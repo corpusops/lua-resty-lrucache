@@ -1,5 +1,0 @@
-lua-resty-lrucache (0.12-1) UNRELEASED; urgency=medium
-
-  * Initial release. (Closes: #1016053)
-
- -- Jan Mojžíš <jan.mojzis@gmail.com>  Mon, 25 Jul 2022 12:21:44 +0200
