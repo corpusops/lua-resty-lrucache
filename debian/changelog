@@ -1,4 +1,4 @@
-lua-resty-lrucache (0.12-1) UNRELEASED; urgency=medium
+lua-resty-lrucache (0.13-1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #1016053)
 
