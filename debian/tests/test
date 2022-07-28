@@ -26,5 +26,8 @@ cd ..
 TEST_NGINX_LOAD_MODULES="/usr/lib/nginx/modules/ndk_http_module.so /usr/lib/nginx/modules/ngx_http_lua_module.so"
 export TEST_NGINX_LOAD_MODULES
 
+TEST_NGINX_BINARY=/usr/sbin/nginx
+export TEST_NGINX_BINARY
+
 # run test
 make test
