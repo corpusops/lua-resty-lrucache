@@ -56,7 +56,7 @@ EOF
 
 # XXX - remove with new ngx_lua module
 cat <<EOF > "/etc/nginx/conf.d/00-mod-http-lua.conf"
-lua_package_path '/usr/share/lua/5.1/lib/?.lua;;';
+lua_package_path '/usr/share/lua/5.1/?.lua;;';
 EOF
 
 exp="int-value: 0
