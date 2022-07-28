@@ -1,5 +1,5 @@
 Tests: test
-Restrictions: allow-stderr, needs-root
+Restrictions: allow-stderr isolation-container needs-root
 Depends: perl,
          liblist-moreutils-perl,
          liblwp-useragent-determined-perl,
@@ -15,6 +15,21 @@ Depends: perl,
          libtest-base-perl,
          libalgorithm-diff-perl,
          libtest-longstring-perl,
-         nginx-extras,
+         nginx,
+         nginx-common,
+         nginx-core,
+         libnginx-mod-http-ndk,
+         libnginx-mod-http-lua,
+         @,
+         @builddeps@,
+
+Tests: nginxtest
+Restrictions: allow-stderr isolation-container needs-root
+Depends: curl,
+         nginx,
+         nginx-common,
+         nginx-core,
+         libnginx-mod-http-ndk,
+         libnginx-mod-http-lua,
          @,
          @builddeps@,
