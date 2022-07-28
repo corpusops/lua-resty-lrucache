@@ -1,0 +1,30 @@
+#!/bin/sh
+set -e
+
+# change directory to autopkgtest root
+cd `dirname "$0"`
+
+# install perl modules (Test::Nginx, Test::Nginx::Socket::Lua)
+#cpan Test::Nginx
+#cpan Test::Nginx::Socket::Lua
+(
+  cd perl
+  ls -1 | while read name; do
+    (
+      cd ${name}
+      perl Makefile.PL
+      make
+      make install
+    )
+  done
+)
+
+# change directory to package root
+cd ..
+cd ..
+
+TEST_NGINX_LOAD_MODULES="/usr/lib/nginx/modules/ndk_http_module.so /usr/lib/nginx/modules/ngx_http_lua_module.so"
+export TEST_NGINX_LOAD_MODULES
+
+# run test
+make test
