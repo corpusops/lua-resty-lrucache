@@ -2,6 +2,9 @@ From: =?utf-8?b?SmFuIE1vasW+w63FoQ==?= <jan.mojzis@gmail.com>
 Date: Thu, 28 Jul 2022 06:59:07 +0200
 Subject: disable init-by-lua tests
 
+This test works only against Openresty compiled nginx.
+Fails against Debian nginx.
+
 ---
  t/003-init-by-lua.t             | 94 -----------------------------------------
  t/100-pureffi/003-init-by-lua.t | 94 -----------------------------------------
