@@ -1,3 +1,11 @@
+lua-resty-lrucache (0.13-3) UNRELEASED; urgency=medium
+
+  * d/patches/0001-disable-init-by-lua-tests.patch removed
+  * d/patches/fix_test_nginx.patch removed
+  * d/tests/test updated and added functionality from removed patches above
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Sun, 31 Jul 2022 08:07:06 +0200
+
 lua-resty-lrucache (0.13-2) unstable; urgency=medium
 
   * d/copyright fix lintian globbing-patterns-out-of-order

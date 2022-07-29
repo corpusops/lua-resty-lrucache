@@ -1,6 +1,17 @@
 #!/bin/sh
 set -e
 
+# Disable init-by-lua tests.
+# These tests works only against Openresty compiled nginx.
+# Fails against Debian nginx.
+mv -f t/003-init-by-lua.t t/003-init-by-lua.t.bk
+mv -f t/100-pureffi/003-init-by-lua.t t/100-pureffi/003-init-by-lua.t.bk
+cleanup() {
+  mv -f t/003-init-by-lua.t.bk t/003-init-by-lua.t
+  mv -f t/100-pureffi/003-init-by-lua.t.bk t/100-pureffi/003-init-by-lua.t
+}
+trap "cleanup" EXIT TERM INT
+
 TEST_NGINX_LOAD_MODULES="/usr/lib/nginx/modules/ndk_http_module.so /usr/lib/nginx/modules/ngx_http_lua_module.so"
 export TEST_NGINX_LOAD_MODULES
 
@@ -8,4 +19,4 @@ TEST_NGINX_BINARY=/usr/sbin/nginx
 export TEST_NGINX_BINARY
 
 # run test
-make test
+prove -I./debian/tests/perl/Test-Nginx-0.30/lib -r t/
