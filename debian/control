@@ -16,7 +16,7 @@ Depends: ${misc:Depends},
 Provides: ${lua:Provides},
 XB-Lua-Versions: ${lua:Versions}
 Architecture: all
-Description: LRU cache for the ngx_lua module.
+Description: Simple LRU cache for the ngx_lua module
  The LRU cache resides completely in the Lua VM and is subject to Lua GC.
  As such, do not expect it to get shared across the OS process boundary.
  The upside is that you can cache arbitrary complex Lua values (such as deep
