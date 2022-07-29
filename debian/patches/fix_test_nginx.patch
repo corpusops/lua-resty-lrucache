@@ -1,0 +1,15 @@
+Description: avoid installation of perl test-nginx to /usr/local
+Author: Jérémy Lal <kapouer@melix.org>
+Forwarded: not-needed
+Last-Update: 2022-07-29
+--- a/Makefile
++++ b/Makefile
+@@ -15,7 +15,7 @@
+ 	$(INSTALL) lib/resty/lrucache/*.lua $(DESTDIR)/$(LUA_LIB_DIR)/resty/lrucache/
+ 
+ test: all lint
+-	PATH=$(OPENRESTY_PREFIX)/nginx/sbin:$$PATH prove -I../test-nginx/lib -r t
++	PATH=$(OPENRESTY_PREFIX)/nginx/sbin:$$PATH prove -I./debian/tests/perl/Test-Nginx-0.30/lib -r t
+ 
+ lint:
+ 	@! grep -P -n --color -- 'require.*?resty\.lrucache[^.]' t/*pureffi*/*.t || (echo "ERROR: Found pureffi tests requiring 'resty.lrucache'." > /dev/stderr; exit 1)
