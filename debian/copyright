@@ -8,13 +8,13 @@ Copyright: 2014-2019, by Yichun "agentzh" Zhang, OpenResty Inc.
            2014-2017, by Shuxin Yang.
 License: BSD-2-clause
 
+Files: debian/*
+Copyright: 2022, Jan Mojzis <jan.mojzis@gmail.com>
+License: BSD-2-clause
+
 Files: debian/tests/perl/Test-Nginx-0.30/*
 Copyright: Copyright (c) 2009-2017, Yichun Zhang (agentzh) `<agentzh@gmail.com>`, OpenResty Inc.
            Copyright (c) 2011-2012, Antoine Bonavita `<antoine.bonavita@gmail.com>`.
-License: BSD-2-clause
-
-Files: debian/*
-Copyright: 2022, Jan Mojzis <jan.mojzis@gmail.com>
 License: BSD-2-clause
 
 License: BSD-2-clause
