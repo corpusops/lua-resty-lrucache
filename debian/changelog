@@ -1,4 +1,4 @@
-lua-resty-lrucache (0.13-3) UNRELEASED; urgency=medium
+lua-resty-lrucache (0.13-3) unstable; urgency=medium
 
   * d/patches/0001-disable-init-by-lua-tests.patch removed
   * d/patches/fix_test_nginx.patch removed
