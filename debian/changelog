@@ -3,6 +3,7 @@ lua-resty-lrucache (0.13-3) UNRELEASED; urgency=medium
   * d/patches/0001-disable-init-by-lua-tests.patch removed
   * d/patches/fix_test_nginx.patch removed
   * d/tests/test updated and added functionality from removed patches above
+  * d/changelog fixed typo in ITP bug number (Closes: #1016054)
 
  -- Jan Mojžíš <jan.mojzis@gmail.com>  Sun, 31 Jul 2022 08:07:06 +0200
 
@@ -15,6 +16,6 @@ lua-resty-lrucache (0.13-2) unstable; urgency=medium
 
 lua-resty-lrucache (0.13-1) unstable; urgency=medium
 
-  * Initial release. (Closes: #1016053)
+  * Initial release. (Closes: #1016054)
 
  -- Jan Mojžíš <jan.mojzis@gmail.com>  Fri, 29 Jul 2022 17:35:26 +0200
