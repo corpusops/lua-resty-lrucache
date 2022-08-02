@@ -13,6 +13,7 @@ Vcs-Browser: https://salsa.debian.org/lua-team/lua-resty-lrucache
 Package: lua-resty-lrucache
 Depends: ${misc:Depends},
          ${shlibs:Depends},
+         libluajit2-5.1-dev
 Provides: ${lua:Provides},
 XB-Lua-Versions: ${lua:Versions}
 Architecture: all
