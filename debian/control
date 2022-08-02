@@ -11,9 +11,9 @@ Vcs-Git: https://salsa.debian.org/lua-team/lua-resty-lrucache.git
 Vcs-Browser: https://salsa.debian.org/lua-team/lua-resty-lrucache
 
 Package: lua-resty-lrucache
-Depends: ${misc:Depends},
+Depends: libluajit2-5.1-dev,
+         ${misc:Depends},
          ${shlibs:Depends},
-         libluajit2-5.1-dev
 Provides: ${lua:Provides},
 XB-Lua-Versions: ${lua:Versions}
 Architecture: all
