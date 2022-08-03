@@ -5,10 +5,10 @@ set -e
 echo "uname -m: `uname -m`"
 echo
 
-# Skip the test on ppc64el arch.
-# The package depends on luajit2 library which is broken on ppc64el.
+# Tests are skipped on ppc64el architecture,
+# where the luajit2 library is broken.
 case "`uname -m`" in
-  x86_64|ppcle|ppc64le|riscv64)
+  ppcle|ppc64le)
   exit 77
   ;;
 esac
