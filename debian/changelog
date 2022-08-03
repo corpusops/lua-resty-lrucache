@@ -1,3 +1,9 @@
+lua-resty-lrucache (0.13-5) UNRELEASED; urgency=medium
+
+  * d/control: fix dependency libluajit2-5.1-dev -> libluajit2-5.1-2
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 03 Aug 2022 05:26:49 +0200
+
 lua-resty-lrucache (0.13-4) unstable; urgency=medium
 
   * d/control added dependency on libluajit2-5.1-dev
