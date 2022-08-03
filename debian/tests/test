@@ -1,6 +1,18 @@
 #!/bin/sh
 set -e
 
+# debug print
+echo "uname -m: `uname -m`"
+echo
+
+# Skip the test on ppc64el arch.
+# The package depends on luajit2 library which is broken on ppc64el.
+case "`uname -m`" in
+  x86_64|ppcle|ppc64le|riscv64)
+  exit 77
+  ;;
+esac
+
 # Disable init-by-lua tests.
 # These tests works only against Openresty compiled nginx.
 # Fails against Debian nginx.

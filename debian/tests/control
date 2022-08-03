@@ -1,5 +1,5 @@
 Tests: test
-Restrictions: allow-stderr isolation-container needs-root
+Restrictions: allow-stderr isolation-container needs-root skippable
 Depends: libalgorithm-diff-perl,
          libclass-spiffy-perl,
          libextutils-config-perl,
@@ -24,7 +24,7 @@ Depends: libalgorithm-diff-perl,
          @builddeps@,
 
 Tests: nginxtest
-Restrictions: allow-stderr isolation-container needs-root
+Restrictions: allow-stderr isolation-container needs-root skippable
 Depends: curl,
          libnginx-mod-http-lua,
          libnginx-mod-http-ndk,
