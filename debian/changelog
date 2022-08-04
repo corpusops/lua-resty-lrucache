@@ -1,10 +1,10 @@
-lua-resty-lrucache (0.13-5) UNRELEASED; urgency=medium
+lua-resty-lrucache (0.13-5) unstable; urgency=medium
 
   * d/control: fix dependency libluajit2-5.1-dev -> libluajit2-5.1-2
   * d/tests: marked tests as skippable and skipped test on ppc64el,
     where the luajit2 library currently doesn't work.
 
- -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 03 Aug 2022 05:26:49 +0200
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Thu, 04 Aug 2022 04:13:49 +0200
 
 lua-resty-lrucache (0.13-4) unstable; urgency=medium
 
