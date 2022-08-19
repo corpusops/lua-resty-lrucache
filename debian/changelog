@@ -1,4 +1,4 @@
-lua-resty-lrucache (0.13-7) UNRELEASED; urgency=medium
+lua-resty-lrucache (0.13-7) unstable; urgency=medium
 
   * d/t/nginxtest skip tests on ppc64el
 
