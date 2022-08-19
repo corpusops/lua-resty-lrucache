@@ -1,6 +1,8 @@
 lua-resty-lrucache (0.13-6) UNRELEASED; urgency=medium
 
   * d/t/control fixed test dependencies
+  * d/t/nginxtest updated, added check if lua http module is installed,
+    and if it is not, then the test is skipped.
 
  -- Jan Mojžíš <jan.mojzis@gmail.com>  Fri, 19 Aug 2022 09:30:10 +0200
 

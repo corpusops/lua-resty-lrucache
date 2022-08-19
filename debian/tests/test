@@ -5,13 +5,10 @@ set -e
 echo "uname -m: `uname -m`"
 echo
 
-# Tests are skipped on ppc64el architecture,
-# where the luajit2 library is broken.
-case "`uname -m`" in
-  ppcle|ppc64le)
+if [ ! -f /usr/lib/nginx/modules/ngx_http_lua_module.so ]; then
+  # Skip the test if ngx_http_lua_module.so doesn't exist
   exit 77
-  ;;
-esac
+fi
 
 # Disable init-by-lua tests.
 # These tests works only against Openresty compiled nginx.
