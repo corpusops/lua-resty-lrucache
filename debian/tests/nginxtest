@@ -6,6 +6,14 @@ if [ ! -f /usr/lib/nginx/modules/ngx_http_lua_module.so ]; then
   exit 77
 fi
 
+# Tests are skipped on ppc64el architecture,
+# where the luajit2 library is broken.
+case "`uname -m`" in
+  ppcle|ppc64le)
+  exit 77
+  ;;
+esac
+
 cat <<EOF > "/etc/nginx/sites-enabled/default"
 server {
   listen 80 default_server;
