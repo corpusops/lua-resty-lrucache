@@ -1,4 +1,4 @@
-lua-resty-lrucache (0.13-6) UNRELEASED; urgency=medium
+lua-resty-lrucache (0.13-6) unstable; urgency=medium
 
   * d/t/control fixed test dependencies
   * d/t/nginxtest updated, added check if lua http module is installed,
