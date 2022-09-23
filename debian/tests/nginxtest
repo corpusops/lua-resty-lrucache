@@ -1,18 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
 if [ ! -f /usr/lib/nginx/modules/ngx_http_lua_module.so ]; then
   # Skip the test if ngx_http_lua_module.so doesn't exist
   exit 77
 fi
-
-# Tests are skipped on ppc64el architecture,
-# where the luajit2 library is broken.
-case "`uname -m`" in
-  ppcle|ppc64le)
-  exit 77
-  ;;
-esac
 
 cat <<EOF > "/etc/nginx/sites-enabled/default"
 server {
@@ -89,7 +81,7 @@ string-value: nil
 string-value: nil
 response_code: 200"
 
-nginx -t || :
+nginx -t
 invoke-rc.d nginx restart
 out=`curl --fail -w "response_code: %{http_code}\n" http://127.0.0.1/t`
 

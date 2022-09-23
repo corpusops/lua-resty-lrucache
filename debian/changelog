@@ -1,3 +1,10 @@
+lua-resty-lrucache (0.13-8) UNRELEASED; urgency=medium
+
+  * d/t/nginxtest cleanup, after the luajit2 library, which lua-resty-lrucache
+    depends on, has been removed on ppc64el architecture (segfaults)
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Fri, 23 Sep 2022 17:29:30 +0200
+
 lua-resty-lrucache (0.13-7) unstable; urgency=medium
 
   * d/t/nginxtest skip tests on ppc64el
