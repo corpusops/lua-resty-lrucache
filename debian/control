@@ -1,7 +1,7 @@
 Source: lua-resty-lrucache
 Section: net
 Priority: optional
-Build-Depends: debhelper-compat (= 13),
+Build-Depends: debhelper,
                dh-lua,
 Maintainer: Jan Mojžíš <jan.mojzis@gmail.com>
 Homepage: https://github.com/openresty/lua-resty-lrucache

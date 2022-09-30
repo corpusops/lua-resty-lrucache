@@ -1,4 +1,58 @@
-lua-resty-lrucache (0.13-8) UNRELEASED; urgency=medium
+lua-resty-lrucache (0.13-8ppa-nginx-9) jammy; urgency=medium
+
+  * packaging for jammy
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:14:33 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-8) jammy; urgency=medium
+
+  * packaging for focal
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:14:32 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-7) focal; urgency=medium
+
+  * packaging for bionic
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:14:30 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-6) bionic; urgency=medium
+
+  * packaging for xenial
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:14:28 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-5) xenial; urgency=medium
+
+  * packaging for jammy
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:10:32 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-4) jammy; urgency=medium
+
+  * packaging for focal
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:10:30 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-3) focal; urgency=medium
+
+  * packaging for bionic
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:10:29 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-2) bionic; urgency=medium
+
+  * packaging for xenial
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:10:11 +0200
+
+lua-resty-lrucache (0.13-8ppa-nginx-1) xenial; urgency=medium
+
+  * packaging for xenial
+
+ -- kiorky <kiorky@cryptelium.net>  Fri, 30 Sep 2022 22:09:52 +0200
+
+lua-resty-lrucache (0.13-8) xenial; urgency=medium
 
   * d/t/nginxtest cleanup, after the luajit2 library, which lua-resty-lrucache
     depends on, has been removed on ppc64el architecture (segfaults)
